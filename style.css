@@ -137,6 +137,10 @@ body {
     color: #212121;
 }
 
+.text-grey5 {
+    color: #525252;
+}
+
 .text-purple {
     color: #3D386A;
 }
@@ -361,10 +365,7 @@ body {
 
 .patient-detail-wrapper .left-section {
     width: 40%;
-}
-
-.patient-detail-wrapper .right-section {
-    width: 60%;
+    margin-right: 30px;
 }
 
 .patient-detail-wrapper .detail-left-first {
@@ -394,4 +395,37 @@ body {
 .patient-detail-wrapper .vital-third {
     width: 37%;
     padding-left: 6px;
+}
+
+.patient-detail-wrapper .detail-left-second {
+    border-radius: 12px;
+    box-shadow: 0px 1px 6px #95959515;
+    padding: 18px 20px;
+    margin-top: 24px;
+}
+
+.patient-detail-wrapper .right-section {
+    width: 60%;
+}
+
+.patient-detail-wrapper .save-btn { 
+    color: #3D386A;
+    font-size: 20px;
+    padding: 11px 28px;
+    background-color: white;
+    border: 1px solid #3D386A;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+}
+
+.patient-detail-wrapper .refer-btn { 
+    color: #fff;
+    font-size: 20px;
+    padding: 11px 28px;
+    background-color: #3D386A;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    margin-left: 28px;
 }
