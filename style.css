@@ -429,3 +429,26 @@ body {
     outline: none;
     margin-left: 28px;
 }
+
+.form-second-sec {
+    box-shadow: 0px 1px 6px #95959515;
+    padding: 18px 30px;
+    margin-top: 16px;
+    border-radius: 12px;
+    min-height: 90vh;
+}
+
+.form-date {
+    border-bottom: 1px solid #707070;
+}
+
+.input {
+    border: none;
+    outline: none;
+    padding: 20px 4px;
+}
+
+.input-border {
+    border-bottom: 1px solid #707070;
+
+}
