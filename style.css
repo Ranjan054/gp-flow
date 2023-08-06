@@ -65,6 +65,10 @@ body {
     justify-content: space-between;
 }
 
+.shrink-0 {
+    flex-shrink: 0;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -185,6 +189,18 @@ body {
     overflow: auto;
 }
 
+.break-word {
+    word-break: break-all;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.visible-hidden {
+    visibility: hidden;
+}
+
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -201,12 +217,28 @@ body {
     margin-top: 24px;
 }
 
+.mt-6 {
+    margin-top: 6px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
 .mt-16 {
     margin-top: 16px;
 }
 
 .mt-36 {
     margin-top: 36px;
+}
+
+.mt-100 {
+    margin-top: 100px;
 }
 
 .mr-15 {
@@ -221,13 +253,29 @@ body {
     margin-left: 10px;
 }
 
+.ml-30 {
+    margin-left: 30px;
+}
+
 .px-12 {
     padding: 0 12px;
 }
 
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.px-36 {
+    padding: 0 36px;
+}
+
 .header {
     z-index: 10;
-    padding: 8px 24px;
+    padding: 0 24px;
 }
 
 .header .logo-wrapper {
@@ -245,10 +293,26 @@ body {
     font-weight: 300;
 }
 
-.header .links-wrapper .active {
+.header .links-wrapper .active a{
     color: #3D386A;
     font-weight: 600;
 }
+
+.header .links-wrapper .link { 
+    padding: 38px 18px;
+    position: relative;
+}
+
+.header .links-wrapper .active .bottom-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #3D386A;
+}
+
 
 .header .user-icon {
     margin-left: 36px;
@@ -258,6 +322,7 @@ body {
     width: 35%;
     background-color: #fff;
     margin-left: auto;
+    height: calc(100% - 100px);
 }
 
 .chat-wrapper .chat-heading {
@@ -430,25 +495,142 @@ body {
     margin-left: 28px;
 }
 
-.form-second-sec {
+.patient-detail-wrapper .form-second-sec {
     box-shadow: 0px 1px 6px #95959515;
     padding: 18px 30px;
     margin-top: 16px;
     border-radius: 12px;
-    min-height: 90vh;
+    /* min-height: 100vh; */
 }
 
-.form-date {
+.patient-detail-wrapper .form-date {
     border-bottom: 1px solid #707070;
 }
 
-.input {
+.patient-detail-wrapper .input {
     border: none;
     outline: none;
     padding: 20px 4px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
-.input-border {
+.patient-detail-wrapper .input-border {
     border-bottom: 1px solid #707070;
+}
 
+.patient-detail-wrapper .video-call-wrapper {
+    position: relative;
+    margin-top: 24px;
+}
+
+.patient-detail-wrapper .video-first {
+    border-radius: 10px;
+}
+
+.patient-detail-wrapper .video-second {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    border-radius: 10px;
+}
+
+.patient-detail-wrapper .video-btn-wrapper {
+    position: absolute;
+    bottom: -10px;
+    left: 11%;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #000000;
+    border-radius: 6px;
+    padding: 0px;
+}
+
+.patient-detail-wrapper .video-btn {
+    margin: 8px 26px;
+    cursor: pointer;
+}
+
+.detail-section {
+    width: 100%;
+    padding: 50px;
+    background-color: #00000063;
+}
+
+.detail-section .detail-card {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 75%;
+}
+
+.detail-section .title-ref {
+    padding: 10px 36px;
+    background-color: #F8F8F8;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.detail-section .user-ref {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #707070;
+}
+
+.detail-section .details-ref {
+    padding: 40px 95px 24px;
+}
+
+.detail-section .details-note {
+    padding: 4px 36px 36px;
+}
+
+.patient-detail-wrapper .vital-first-nw {
+    border-right: 1px solid #707070;
+    padding-right: 36px;
+}
+
+.patient-detail-wrapper .vital-data {
+    border-right: 1px solid #707070;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.patient-detail-wrapper .vital-third-nw {
+    padding-left: 36px;
+}
+
+.patient-detail-wrapper .patient-detail-btn {
+    min-width: 130px;
+    background-color: #3D386A;
+    border-radius: 10px;
+    padding: 19px 18px;
+    cursor: pointer;
+}
+
+.user-detail-wrapper {
+    background-color: #F2F2F2;
+    padding: 60px 40px;
+}
+
+.user-detail { 
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 0 60px 60px;
+    width: 75%;
+}
+
+.user-detail-text-wrapper {
+    margin-left: 246px;
+}
+
+.user-name-wrapper {
+    margin-top: -26px;
+}
+
+.user-name {
+    font-size: 50px;
+    margin-left: 32px;
+}
+
+.user-detail-label {
+    width: 170px;
+    flex-shrink: 0;
 }

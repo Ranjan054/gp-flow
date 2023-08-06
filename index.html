@@ -37,14 +37,17 @@
                     </div>
                 </div>
                 <div class="flex links-wrapper">
-                    <div>
+                    <div class="link">
                         <a href="wwww.google.com">Dashboard</a>
+                        <div class="bottom-line"></div>
                     </div>
-                    <div class="ml-35">
-                        <a class="active" href="wwww.google.com">Booked Appointment</a>
+                    <div class="link active">
+                        <a href="wwww.google.com">Booked Appointment</a>
+                        <div class="bottom-line"></div>
                     </div>
-                    <div class="ml-35">
+                    <div class="link">
                         <a href="wwww.google.com">History</a>
+                        <div class="bottom-line"></div>
                     </div>
                 </div>
             </div>
@@ -87,7 +90,7 @@
             </div>
         </section> -->
         <!-- chat ui page-13 -->
-        <!-- <section class="chat-wrapper h-full">
+        <!-- <section class="chat-wrapper">
             <div class="bg-grey h-full flex flex-col justify-between">
                 <div class="chat-user-open flex items-center bg-white">
                     <div class="chat-back-btn">
@@ -114,7 +117,7 @@
                             </div>
                             <div class="chat-msg-card bg-white">
                                 <p class="text-grey text-base leading-24 mb-12 font-thin">And we also need more information. Please visit the Given link and provide answer</p>
-                                <a class="text-blue text-base leading-24 font-semibold" href="www.google.com">https://workspace.google.com/business/</a>
+                                <a class="text-blue text-base leading-24 font-semibold break-word" href="www.google.com">https://workspace.google.com/business/</a>
                             </div>
                             <div class="chat-msg-card bg-white">
                                 <p class="text-grey text-base leading-24 font-thin">Thank You!</p>
@@ -132,7 +135,7 @@
             </div>
         </section> -->
         <!-- patient details page-2  -->
-        <section class="bg-grey1 patient-detail-wrapper flex">
+        <!-- <section class="bg-grey1 patient-detail-wrapper flex">
             <div class="left-section">
                 <div class="flex items-center">
                     <img
@@ -154,6 +157,13 @@
                                     <span class="ml-10">45</span>
                                 </p>
                             </div>
+                            <img
+                                class="pointer"
+                                width="28px"
+                                height="28px"
+                                src="./assets/images/messages.svg"
+                                alt=""
+                            >
                         </div>
                         <div class="flex items-center justify-between mt-16">
                             <p class="text-grey3 text-xs font-thin">
@@ -253,16 +263,15 @@
                     </div>
                 </div>
             </div>
-
             <div class="right-section">
                 <form action="/">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <img
-                            width="24px"
-                            height="24px"
-                            src="./assets/images/create-letter.svg"
-                            alt=""
+                                width="24px"
+                                height="24px"
+                                src="./assets/images/create-letter.svg"
+                                alt=""
                             >
                             <p class="text-grey2 text-20 font-bold ml-10">Create Referral Letter</p>
                         </div>
@@ -270,18 +279,16 @@
                             <a class="save-btn" href="/">Save</a>
                             <a class="refer-btn flex items-center" href="/">
                                 <img
-                                width="24px"
-                                height="24px"
-                                src="./assets/images/paper-plane.svg"
-                                alt=""
+                                    width="24px"
+                                    height="24px"
+                                    src="./assets/images/paper-plane.svg"
+                                    alt=""
                                 >
-                                <span class="text-white text-20 ml-10">Save</span>
+                                <span class="text-white text-20 ml-10">Refer</span>
                             </a>
                         </div>
                     </div>
-
                     <div class="form-second-sec bg-white flex flex-col justify-between">
-
                         <div class="flex flex-col">
                             <div class="flex items-center justify-between form-date">
                                 <p class="text-grey2 text-20 font-bold">Tuesday 6th December 2023</p>
@@ -293,25 +300,896 @@
                                 >
                             </div>
                             <input class="input input-border text-grey2 text-20 font-normal" type="text" placeholder="Refer To">
-                            <input class="input input-border text-grey2 text-20 font-thin" type="text" placeholder="subject">
-                            <!-- <input class="input text-grey2 text-20 font-thin" type="text" placeholder="Type Letter"> -->
-                            <textarea class="input text-grey2 text-20 font-thin" name="textarea" id="" cols="30" rows="8">Type Letter</textarea>
+                            <input class="input input-border text-grey2 text-20 font-thin" type="text" placeholder="Subject">
+                            <textarea
+                                class="input text-grey2 text-20 font-thin mb-14"
+                                name="textarea"
+                                id=""
+                                cols="30"
+                                rows="18"
+                                placeholder="Type Letter"
+                            ></textarea>
                         </div>
-
                         <div class="flex items-center justify-between">
-                            <p class="text-grey2 text-20 font-thin">{Name} <br> {Signature} <br> {Dr. Physician name}</p>
+                            <p class="text-grey2 text-20 font-thin">
+                                {Name}
+                                <br>
+                                {Signature}
+                                <br>
+                                {Dr. Physician name}
+                            </p>
                             <img
-                            width="45px"
-                            height="58px"
-                            src="./assets/images/attachment.png"
-                            alt=""
-                        >
+                                width="45px"
+                                height="58px"
+                                src="./assets/images/attachment.png"
+                                alt=""
+                            >
                         </div>
-
-
-
                     </div>
                 </form>
+            </div>
+        </section> -->
+        <!-- patient details page-3  -->
+        <!-- <section class="bg-grey1 patient-detail-wrapper flex">
+            <div class="left-section">
+                <div class="flex items-center">
+                    <img
+                        class="pointer"
+                        width="40px"
+                        height="40px"
+                        src="./assets/images/arrow-left-purple.svg"
+                        alt=""
+                    >
+                    <p class="text-grey2 text-22 font-bold ml-10">Patient Details</p>
+                </div>
+
+                <div class="video-call-wrapper">
+                    <img
+                    class="video-first"
+                    width="100%"
+                    height="400px"
+                    src="./assets/images/video1.png"
+                    alt=""
+                    >
+                    <img
+                    class="video-second"
+                    width="150px"
+                    height="90px"
+                    src="./assets/images/video2.png"
+                    alt=""
+                    >
+
+                    <div class="video-btn-wrapper flex items-center">
+                        <div class="text-center video-btn">
+                            <img
+                            width="30px"
+                            height="30px"
+                            src="./assets/images/messages.svg"
+                            alt=""
+                            >
+                            <p class="text-grey3 text-xs font-normal">Turn off</p>
+                        </div>
+                        <div class="text-center video-btn">
+                            <img
+                            width="30px"
+                            height="30px"
+                            src="./assets/images/messages.svg"
+                            alt=""
+                            >
+                            <p class="text-grey3 text-xs font-normal">Mute</p>
+                        </div>
+                        <div class="text-center video-btn">
+                            <img
+                            width="30px"
+                            height="30px"
+                            src="./assets/images/messages.svg"
+                            alt=""
+                            >
+                            <p class="text-grey3 text-xs font-normal">Leave</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="bg-white detail-left-first mt-24">
+                    <div class="px-12">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <p class="text-purple text-30 font-bold mr-15">Sean Rada</p>
+                                <p class="text-grey3 text-15 font-thin">
+                                    Male
+                                    <span class="ml-10">45</span>
+                                </p>
+                            </div>
+                            <img
+                                class="pointer"
+                                width="28px"
+                                height="28px"
+                                src="./assets/images/messages.svg"
+                                alt=""
+                            >
+                        </div>
+                        <div class="flex items-center justify-between mt-16">
+                            <p class="text-grey3 text-xs font-thin">
+                                Contact:
+                                <span class="font-normal">1234567890</span>
+                            </p>
+                            <p class="text-grey3 text-xs font-thin">
+                                Medicare No. :
+                                <span class="font-normal">5336 5336 5336 5336</span>
+                            </p>
+                            <p class="text-grey3 text-xs font-thin">
+                                Last Visited:
+                                <span class="font-normal">24/04/2023</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="flex">
+                        <img
+                            class="pointer"
+                            width="25px"
+                            height="25px"
+                            src="./assets/images/vital.svg"
+                            alt=""
+                        >
+                        <p class="text-grey4 text-18 font-bold ml-10">Sean Rada</p>
+                    </div>
+                    <div class="flex mt-24">
+                        <div class="vital-first">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Sean Rada</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    120
+                                    <span class="text-grey3 text-xs font-semibold">Mg/Dl</span>
+                                    <span class="text-grey3 text-xs font-normal">(Before meal)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-second">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Temperature</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    98.7
+                                    <span class="text-grey3 text-xs font-semibold">&#8457;</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-third">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Blood Pressure</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    120/80
+                                    <span class="text-grey3 text-xs font-semibold">Mm hg</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-36">
+                        <div class="vital-first">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Respiratory Rate</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    24
+                                    <span class="text-grey3 text-xs font-semibold">/min</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-second">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">SpO2</p>
+                                <p class="text-grey4 text-20 font-bold">95%</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-third">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Weight</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    78
+                                    <span class="text-grey3 text-xs font-semibold">Kg</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-left-second bg-white">
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">Please list all problem you want to address today?</p>
+                        <p class="text-grey3 text-18 font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">Which health issues is your top priority for today?</p>
+                        <p class="text-grey3 text-18 font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">What do you feel might be the cause of this problem ?</p>
+                        <p class="text-grey3 text-18 font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <form action="/">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img
+                                width="24px"
+                                height="24px"
+                                src="./assets/images/create-letter.svg"
+                                alt=""
+                            >
+                            <p class="text-grey2 text-20 font-bold ml-10">Create Referral Letter</p>
+                        </div>
+                        <div class="flex items-center">
+                            <a class="save-btn" href="/">Save</a>
+                            <a class="refer-btn flex items-center" href="/">
+                                <img
+                                    width="24px"
+                                    height="24px"
+                                    src="./assets/images/paper-plane.svg"
+                                    alt=""
+                                >
+                                <span class="text-white text-20 ml-10">Refer</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form-second-sec bg-white flex flex-col justify-between">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between form-date">
+                                <p class="text-grey2 text-20 font-bold">Tuesday 6th December 2023</p>
+                                <img
+                                    width="140px"
+                                    height="72px"
+                                    src="./assets/images/logo.png"
+                                    alt=""
+                                >
+                            </div>
+                            <input class="input input-border text-grey2 text-20 font-normal" type="text" placeholder="Refer To">
+                            <input class="input input-border text-grey2 text-20 font-thin" type="text" placeholder="Subject">
+                            <textarea
+                                class="input text-grey2 text-20 font-thin mb-14"
+                                name="textarea"
+                                id=""
+                                cols="30"
+                                rows="18"
+                                placeholder="Type Letter"
+                            ></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-grey2 text-20 font-thin">
+                                {Name}
+                                <br>
+                                {Signature}
+                                <br>
+                                {Dr. Physician name}
+                            </p>
+                            <img
+                                width="45px"
+                                height="58px"
+                                src="./assets/images/attachment.png"
+                                alt=""
+                            >
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section> -->
+        <!-- referral letter page-5  -->
+        <!-- <section class="detail-section flex items-center justify-center">
+            <div class="detail-card">
+                <div class="title-ref">
+                    <p class="text-grey2 text-22 font-bold">Referral Letter</p>
+                </div>
+                <div class="px-36 user-ref">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <p class="text-purple text-30 font-bold mr-15">Sean Rada</p>
+                            <p class="text-grey3 text-15 font-thin">
+                                Male
+                                <span class="ml-10">45</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-16">
+                        <p class="text-grey3 text-xs font-thin">
+                            Contact:
+                            <span class="font-normal">1234567890</span>
+                        </p>
+                        <p class="text-grey3 text-xs font-thin ml-30">
+                            Medicare No. :
+                            <span class="font-normal">5336 5336 5336 5336</span>
+                        </p>
+                        <p class="text-grey3 text-xs font-thin ml-30">
+                            Last Visited:
+                            <span class="font-normal">24/04/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="details-ref">
+                    <p class="text-grey2 text-xs font-normal">Date: August 18, 2022</p>
+                    <p class="text-grey2 text-xs font-normal mt-16">
+                        To
+                        <br>
+                        {{ATTN}}
+                        <br>
+                        {{ADDRESS}}
+                        <br>
+                        {{POSTAL CODE}}
+                        <br>
+                        {{COUNTERY}}
+                    </p>
+                    <p class="text-grey2 text-xs font-bold mt-16">
+                        Subject
+                        <span class="font-normal">Letter of Medical Necessity</span>
+                    </p>
+                    <p class="text-grey2 text-xs font-normal mt-16">To Whome It May Concern / Dear Dr,</p>
+                    <p class="text-grey2 text-xs font-normal mt-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-xs font-normal mt-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</p>
+                    <p class="text-grey2 text-xs font-normal mt-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <div class="flex mt-16">
+                        <div>
+                            <p class="text-grey2 text-xs font-normal visible-hidden leading-33"> Empty</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">1. Hypertension</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">2. Diabties Mellitus</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">3. Obesity Releted Depression</p>
+                        </div>
+                        <div class="ml-30">
+                            <p class="text-grey2 text-xs font-bold leading-33">Duration</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">3 years</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">5 years</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">3 years</p>
+                        </div>
+                        <div class="ml-30">
+                            <p class="text-grey2 text-xs font-bold leading-33">Medication</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">Norvasc / Tenomin</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">Glucophage</p>
+                            <p class="text-grey2 text-xs font-normal leading-33">Prozac</p>
+                        </div>
+                    </div>
+                    <p class="text-grey2 text-xs font-normal mt-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a</p>
+                    <p class="text-grey2 text-xs font-normal mt-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                </div>
+            </div>
+        </section> -->
+        <!-- referral letter page-6  -->
+        <!-- <section class="detail-section flex items-center justify-center">
+            <div class="detail-card">
+                <div class="title-ref">
+                    <p class="text-grey2 text-22 font-bold">Note</p>
+                </div>
+                <div class="px-36 user-ref">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <p class="text-purple text-30 font-bold mr-15">Sean Rada</p>
+                            <p class="text-grey3 text-15 font-thin">
+                                Male
+                                <span class="ml-10">45</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-16">
+                        <p class="text-grey3 text-xs font-thin">
+                            Contact:
+                            <span class="font-normal">1234567890</span>
+                        </p>
+                        <p class="text-grey3 text-xs font-thin ml-30">
+                            Medicare No. :
+                            <span class="font-normal">5336 5336 5336 5336</span>
+                        </p>
+                        <p class="text-grey3 text-xs font-thin ml-30">
+                            Last Visited:
+                            <span class="font-normal">24/04/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="details-note">
+                    <p class="text-grey2 text-18 font-normal mt-16">Presenting Complaints</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Relevant History</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Examination</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Recommendation</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Followup</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Personalization Framework</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                </div>
+            </div>
+        </section> -->
+        <!-- other information page-7  -->
+        <!-- <section class="detail-section flex items-center justify-center">
+            <div class="detail-card">
+                <div class="title-ref">
+                    <p class="text-grey2 text-22 font-bold">Other Information</p>
+                </div>
+                <div class="px-36 user-ref">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <p class="text-purple text-30 font-bold mr-15">Sean Rada</p>
+                            <p class="text-grey3 text-15 font-thin">
+                                Male
+                                <span class="ml-10">45</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-16">
+                        <p class="text-grey3 text-xs font-thin">
+                            Contact:
+                            <span class="font-normal">1234567890</span>
+                        </p>
+                        <p class="text-grey3 text-xs font-thin ml-30">
+                            Medicare No. :
+                            <span class="font-normal">5336 5336 5336 5336</span>
+                        </p>
+                        <p class="text-grey3 text-xs font-thin ml-30">
+                            Last Visited:
+                            <span class="font-normal">24/04/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="details-note">
+                    <p class="text-grey2 text-18 font-normal mt-16">Presenting Complaints</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Relevant History</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Examination</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Recommendation</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Followup</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    <p class="text-grey2 text-18 font-normal mt-16">Personalization Framework</p>
+                    <p class="text-grey2 text-base font-thin mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                </div>
+            </div>
+        </section> -->
+        <!-- patient detail page-8  -->
+        <!-- <section class="bg-grey1 patient-detail-wrapper flex">
+            <div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img
+                            class="pointer"
+                            width="40px"
+                            height="40px"
+                            src="./assets/images/arrow-left-purple.svg"
+                            alt=""
+                        >
+                        <p class="text-grey2 text-22 font-bold ml-10">Thank You!</p>
+                    </div>
+                    <div class="flex">
+                        <div class="flex items-center justify-center patient-detail-btn">
+                            <p class="text-white text-base">Other</p>
+                        </div>
+
+                        <div class="flex items-center justify-center patient-detail-btn ml-10">
+                            <p class="text-white text-base">Create Note</p>
+                        </div>
+
+                        <div class="flex items-center justify-center patient-detail-btn ml-10">
+                            <p class="text-white text-base">Create Referral Later</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white detail-left-first mt-24">
+                    <div class="px-12">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <p class="text-purple text-30 font-bold mr-15">Sean Rada</p>
+                                <p class="text-grey3 text-15 font-thin">
+                                    Male
+                                    <span class="ml-10">45</span>
+                                </p>
+                            </div>
+                            <img
+                                class="pointer"
+                                width="28px"
+                                height="28px"
+                                src="./assets/images/messages.svg"
+                                alt=""
+                            >
+                        </div>
+                        <div class="flex items-center mt-16">
+                            <p class="text-grey3 text-xs font-thin">
+                                Contact:
+                                <span class="font-normal">1234567890</span>
+                            </p>
+                            <p class="text-grey3 text-xs font-thin ml-30">
+                                Medicare No. :
+                                <span class="font-normal">5336 5336 5336 5336</span>
+                            </p>
+                            <p class="text-grey3 text-xs font-thin ml-30">
+                                Last Visited:
+                                <span class="font-normal">24/04/2023</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="flex">
+                        <img
+                            class="pointer"
+                            width="25px"
+                            height="25px"
+                            src="./assets/images/vital.svg"
+                            alt=""
+                        >
+                        <p class="text-grey4 text-18 font-bold ml-10">Sean Rada</p>
+                    </div>
+                    <div class="flex mt-24">
+                        <div class="vital-first-nw">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Sean Rada</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    120
+                                    <span class="text-grey3 text-xs font-semibold">Mg/Dl</span>
+                                    <span class="text-grey3 text-xs font-normal">(Before meal)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-data">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Temperature</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    98.7
+                                    <span class="text-grey3 text-xs font-semibold">&#8457;</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-data">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Blood Pressure</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    120/80
+                                    <span class="text-grey3 text-xs font-semibold">Mm hg</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-data">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Respiratory Rate</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    24
+                                    <span class="text-grey3 text-xs font-semibold">/min</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-data">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">SpO2</p>
+                                <p class="text-grey4 text-20 font-bold">95%</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-third-nw">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Weight</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    78
+                                    <span class="text-grey3 text-xs font-semibold">Kg</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-left-second bg-white">
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">Please list all problem you want to address today?</p>
+                        <p class="text-grey3 text-18 font-thin mt-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">Which health issues is your top priority for today?</p>
+                        <p class="text-grey3 text-18 font-thin mt-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">What do you feel might be the cause of this problem ?</p>
+                        <p class="text-grey3 text-18 font-thin mt-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">Is there is anything you are concerned it might be?</p>
+                        <p class="text-grey3 text-18 font-thin mt-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">What would you like o achieve from your appointment today?</p>
+                        <p class="text-grey3 text-18 font-thin mt-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- patient detail page-9 - 11 -->
+        <!-- <section class="bg-grey1 patient-detail-wrapper flex">
+            <div class="left-section">
+                <div class="flex items-center">
+                    <img
+                        class="pointer"
+                        width="40px"
+                        height="40px"
+                        src="./assets/images/arrow-left-purple.svg"
+                        alt=""
+                    >
+                    <p class="text-grey2 text-22 font-bold ml-10">Patient Details</p>
+                </div>
+                <div class="video-call-wrapper">
+                    <img
+                        class="video-first"
+                        width="100%"
+                        height="400px"
+                        src="./assets/images/video1.png"
+                        alt=""
+                    >
+                    <img
+                        class="video-second"
+                        width="150px"
+                        height="90px"
+                        src="./assets/images/video2.png"
+                        alt=""
+                    >
+                    <div class="video-btn-wrapper flex items-center">
+                        <div class="text-center video-btn">
+                            <img
+                                width="30px"
+                                height="30px"
+                                src="./assets/images/messages.svg"
+                                alt=""
+                            >
+                            <p class="text-grey3 text-xs font-normal">Turn off</p>
+                        </div>
+                        <div class="text-center video-btn">
+                            <img
+                                width="30px"
+                                height="30px"
+                                src="./assets/images/messages.svg"
+                                alt=""
+                            >
+                            <p class="text-grey3 text-xs font-normal">Mute</p>
+                        </div>
+                        <div class="text-center video-btn">
+                            <img
+                                width="30px"
+                                height="30px"
+                                src="./assets/images/messages.svg"
+                                alt=""
+                            >
+                            <p class="text-grey3 text-xs font-normal">Leave</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white detail-left-first mt-24">
+                    <div class="px-12">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <p class="text-purple text-30 font-bold mr-15">Sean Rada</p>
+                                <p class="text-grey3 text-15 font-thin">
+                                    Male
+                                    <span class="ml-10">45</span>
+                                </p>
+                            </div>
+                            <img
+                                class="pointer"
+                                width="28px"
+                                height="28px"
+                                src="./assets/images/messages.svg"
+                                alt=""
+                            >
+                        </div>
+                        <div class="flex items-center justify-between mt-16">
+                            <p class="text-grey3 text-xs font-thin">
+                                Contact:
+                                <span class="font-normal">1234567890</span>
+                            </p>
+                            <p class="text-grey3 text-xs font-thin">
+                                Medicare No. :
+                                <span class="font-normal">5336 5336 5336 5336</span>
+                            </p>
+                            <p class="text-grey3 text-xs font-thin">
+                                Last Visited:
+                                <span class="font-normal">24/04/2023</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="flex">
+                        <img
+                            class="pointer"
+                            width="25px"
+                            height="25px"
+                            src="./assets/images/vital.svg"
+                            alt=""
+                        >
+                        <p class="text-grey4 text-18 font-bold ml-10">Sean Rada</p>
+                    </div>
+                    <div class="flex mt-24">
+                        <div class="vital-first">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Sean Rada</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    120
+                                    <span class="text-grey3 text-xs font-semibold">Mg/Dl</span>
+                                    <span class="text-grey3 text-xs font-normal">(Before meal)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-second">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Temperature</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    98.7
+                                    <span class="text-grey3 text-xs font-semibold">&#8457;</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-third">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Blood Pressure</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    120/80
+                                    <span class="text-grey3 text-xs font-semibold">Mm hg</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-36">
+                        <div class="vital-first">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Respiratory Rate</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    24
+                                    <span class="text-grey3 text-xs font-semibold">/min</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-second">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">SpO2</p>
+                                <p class="text-grey4 text-20 font-bold">95%</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center vital-third">
+                            <div>
+                                <p class="text-grey3 text-xs font-normal mb-10">Weight</p>
+                                <p class="text-grey4 text-20 font-bold">
+                                    78
+                                    <span class="text-grey3 text-xs font-semibold">Kg</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-left-second bg-white">
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">Please list all problem you want to address today?</p>
+                        <p class="text-grey3 text-18 font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">Which health issues is your top priority for today?</p>
+                        <p class="text-grey3 text-18 font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                    <div class="mt-36">
+                        <p class="text-grey5 text-20 font-normal">What do you feel might be the cause of this problem ?</p>
+                        <p class="text-grey3 text-18 font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <form action="/">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img
+                                width="24px"
+                                height="24px"
+                                src="./assets/images/create-letter.svg"
+                                alt=""
+                            >
+                            <p class="text-grey2 text-20 font-bold ml-10">Create Referral Letter</p>
+                        </div>
+                        <div class="flex items-center">
+                            <a class="save-btn" href="/">Save</a>
+                            <a class="refer-btn flex items-center" href="/">
+                                <img
+                                    width="24px"
+                                    height="24px"
+                                    src="./assets/images/paper-plane.svg"
+                                    alt=""
+                                >
+                                <span class="text-white text-20 ml-10">Refer</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form-second-sec bg-white flex flex-col justify-between">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between form-date">
+                                <p class="text-grey2 text-20 font-bold">Tuesday 6th December 2023</p>
+                                <img
+                                    width="140px"
+                                    height="72px"
+                                    src="./assets/images/logo.png"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="mt-36">
+                                <p class="text-grey2 text-xs font-normal">Presenting Complaints</p>
+                                <input class="input text-grey2 text-xs font-normal" type="text" placeholder="Type Here">
+                            </div>
+                            <div class="mt-36">
+                                <p class="text-grey2 text-xs font-normal">Relevant History</p>
+                                <input class="input text-grey2 text-xs font-normal" type="text" placeholder="Type Here">
+                            </div>
+                            
+                            <div class="mt-36">
+                                <p class="text-grey2 text-xs font-normal">Examination</p>
+                                <input class="input text-grey2 text-xs font-normal" type="text" placeholder="Type Here">
+                            </div>
+
+                            <div class="mt-36">
+                                <p class="text-grey2 text-xs font-normal">Recommendation</p>
+                                <input class="input text-grey2 text-xs font-normal" type="text" placeholder="Type Here">
+                            </div>
+
+                            <div class="mt-36">
+                                <p class="text-grey2 text-xs font-normal">Followup</p>
+                                <input class="input text-grey2 text-xs font-normal" type="text" placeholder="Type Here">
+                            </div>
+
+                            <div class="mt-36">
+                                <p class="text-grey2 text-xs font-normal">Personalization Framework</p>
+                                <input class="input text-grey2 text-xs font-normal" type="text" placeholder="Type Here">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between mt-100">
+                            <p class="text-grey2 text-20 font-thin">
+                                {Name}
+                                <br>
+                                {Signature}
+                                <br>
+                                {Dr. Physician name}
+                            </p>
+                            <img
+                                width="45px"
+                                height="58px"
+                                src="./assets/images/attachment.png"
+                                alt=""
+                            >
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section> -->
+        <!-- user detail page-10 -->
+        <section class="user-detail-wrapper flex justify-center items-center">
+            <div class="user-detail">
+                <div class="flex items-center user-name-wrapper">
+                    <img
+                        src="/assets/images/chat-profile.png"
+                        width="210px"
+                        height="210px"
+                        alt=""
+                        class="shrink-0"
+                    >
+                    <p class="text-grey user-name font-semibold">Sean Rada</p>
+                </div>
+
+                <div class="user-detail-text-wrapper">
+                    <div class="flex">
+                        <p class="text-grey text-base font-thin user-detail-label">Sean Rada</p>
+                        <p class="text-grey text-22 font-normal user-detail-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+                    </div>
+                    <div class="flex">
+                        <p class="text-grey text-base font-thin user-detail-label">Clinic Name</p>
+                        <p class="text-grey text-22 font-normal user-detail-text">XYZ Clinic</p>
+                    </div>
+                    <div class="flex">
+                        <p class="text-grey text-base font-thin user-detail-label">Email ID</p>
+                        <p class="text-grey text-22 font-normal user-detail-text">sean@gmail.com</p>
+                    </div>
+                    <div class="flex">
+                        <p class="text-grey text-base font-thin user-detail-label">Contact Number</p>
+                        <p class="text-grey text-22 font-normal user-detail-text">123456789</p>
+                    </div>
+                    <div class="flex">
+                        <p class="text-grey text-base font-thin user-detail-label">Addreess</p>
+                        <p class="text-grey text-22 font-normal user-detail-text">1234 xyz 98 Shirley Street PIMPAMA QLD 4209 AUSTRALIA</p>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
